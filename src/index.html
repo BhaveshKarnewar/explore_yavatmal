@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Yavatmal</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-900">
+    <!-- header  -->
+
+    <header
+      id="header"
+      class="w-full flex justify-between p-6 sm:px-10 bg-gray-300"
+    >
+      <div class="text-black-500 text-3xl font-semibold">
+        <a href="#header">
+          Explore<span class="text-purple-700 font-bold">Yavatmal</span></a
+        >
+      </div>
+
+      <nav class="hidden justify-between text-lg gap-8 sm:flex">
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="index.html"
+          >
+            Home</a
+          >
+        </div>
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="#"
+          >
+            Places</a
+          >
+        </div>
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="#"
+          >
+            Food</a
+          >
+        </div>
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="#"
+          >
+            Colleges</a
+          >
+        </div>
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="#"
+          >
+            Events</a
+          >
+        </div>
+      </nav>
+
+      <div class="sm:hidden">
+        <i class="fa-solid fa-bars" id="menuBtn"></i>
+      </div>
+    </header>
+
+    <!-- floated menu -->
+
+    <div
+      class="w-[45%] bg-black text-white text-xl absolute top-0 right-0 rounded-md hidden z-50"
+      id="floatedMenu"
+    >
+      <div class="right-0 p-3 text-right">
+        <i id="crossBtn" class="fa-solid fa-xmark text-xl"></i>
+      </div>
+
+      <a class="block p-3 active:bg-gray-500">Home</a>
+      <hr />
+      <a class="block p-3 active:bg-gray-500">Places</a>
+      <hr />
+      <a class="block p-3 active:bg-gray-500">Food</a>
+      <hr />
+      <a class="block p-3 active:bg-gray-500">Adventure</a>
+      <hr />
+      <a class="block p-3 active:bg-gray-500">About me</a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- grid -->
+      <div class="p-4 sm:p-8 grid sm:grid-cols-12 bg-gray-900 gap-8">
+        <!-- left part -->
+        <div
+          class="sm:col-span-7 bg-gray-500 rounded-md overflow-hidden relative"
+        >
+          <img
+            class="w-[100%] h-[200px] sm:h-[400px] object-fill brightness-[70%]"
+            id="myImage"
+            src="images/chausala.jpg"
+          />
+
+          <div
+            class="text-yellow-500 absolute top-[10%] sm:top-[20%] left-[10%] right-[10%] r text-center"
+          >
+            <h1
+              id="imageText"
+              class="text-white font-bold sm:text-[2rem] text-[1.5rem]"
+            >
+              Explore the city through my perspective
+            </h1>
+          </div>
+        </div>
+
+        <!-- Right part -->
+        <div
+          class="sm:col-span-5 h-[400px] grid sm:p-4 grid-rows-3 gap-4 sm:gap-8 sm:grid"
+        >
+          <div
+            class="h-[100%] bg-red-200 sm:w-[60%] sm:ml-[10%] rounded-md cursor-pointer"
+          >
+            <a href="#nextContent" class="flex items-center h-full"
+              ><i
+                class="fa-solid fa-paper-plane fa-beat-fade text-2xl pl-[25px]"
+              ></i>
+              <div class="pl-[35px] pr-[20px]">
+                <h1 class="font-semibold text-xl">Get started !</h1>
+                <p class="text-sm">Have a walkthrough this Project.</p>
+              </div></a
+            >
+          </div>
+          <div
+            class="h-[100%] bg-blue-200 sm:w-[60%] sm:ml-[40%] rounded-md cursor-pointer"
+          >
+            <a href="webpages/CafeRestro.html" class="flex items-center h-full"
+              ><i class="fa-solid fa-mug-saucer text-2xl pl-[25px]"></i>
+              <div class="pl-[35px]">
+                <h1 class="font-semibold text-xl">Cafe Culture</h1>
+                <p class="text-sm">Best Cafes & Restros in Yavatmal.</p>
+              </div></a
+            >
+          </div>
+          <div
+            class="h-[100%] bg-yellow-200 sm:w-[60%] sm:ml-[10%] rounded-md cursor-pointer"
+          >
+            <a href="#" class="flex items-center h-full"
+              ><i class="fa-solid fa-ghost fa-bounce text-2xl pl-[25px]"></i>
+
+              <div class="pl-[35px] pr-[20px]">
+                <h1 class="font-semibold text-xl">Adventure</h1>
+                <p class="text-sm">
+                  Fun and happening spots, with our experiences.
+                </p>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Next Content (About Yavatmal) -->
+
+    <div id="nextContent" class="pb-4 sm:p-8 text-white bg-gray-900">
+      <div class="flex justify-center flex-col items-center text-justify">
+        <h1 class="text-2xl sm:text-3xl font-semibold">
+          About <span class="text-red-500">Yavatmal</span>
+        </h1>
+        <div class="text-white font-semibold pt-2 pb-4">____________</div>
+
+        <p class="sm:hidden">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          mollitia eius ipsa corrupti eaque atque omnis repudiandae officiis
+          tempora nulla, doloremque accusamus veniam accusantium, debitis
+          ratione quis ipsum laboriosam et.
+        </p>
+        <p class="hidden sm:block">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum
+          culpa, eos possimus soluta doloribus molestiae tenetur similique
+          asperiores sunt nihil! Odit praesentium fugiat id aliquam quam porro
+          tempora voluptatem. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Blanditiis similique sit error ullam vitae
+          dignissimos porro dolor animi alias corporis, repellendus at
+          reprehenderit voluptatem nisi officiis eaque, cumque distinctio!
+          Veniam, nihil! Est culpa quod quis ut! Culpa, quia eveniet amet minus
+          corporis, suscipit impedit delectus sint aliquam explicabo accusamus
+          consequuntur vel sequi tempore officiis mollitia magnam enim
+          voluptatibus dolore natus! Quo voluptatum sed placeat facilis aperiam
+          neque quas excepturi deserunt nemo sit sint illo animi illum minima
+          totam molestias, exercitationem error impedit dolorum ad quis earum.
+          Consequatur quod, eius et exercitationem iste veritatis porro
+          distinctio qui non repellendus sed architecto, quo quibusdam tempore,
+          beatae minus necessitatibus. Qui aut exercitationem maiores mollitia
+          perferendis quia odit ea sed distinctio, corporis atque beatae.
+          Repudiandae, laboriosam incidunt laudantium quia beatae cupiditate eos
+          fuga, aut corporis a officiis ipsam consequuntur cumque suscipit odit!
+          Earum possimus, fugiat quaerat sunt pariatur repellat ratione quis
+          iusto veniam ipsa impedit placeat, sed culpa quibusdam illo dolorem
+          eaque. Magnam totam veniam doloribus. Repellendus est modi dignissimos
+          distinctio numquam illum vel odit porro aspernatur facere id, aut
+          ullam beatae, praesentium eligendi minus. Labore dignissimos nulla
+        </p>
+      </div>
+    </div>
+
+    <!-- Another content (Previews) -->
+
+    <div id="stepOut">
+      <div
+        class="p-4 sm:p-8 bg-gray-900 text-black flex flex-col justify-center items-center gap-6"
+      >
+        <h1 class="text-white text-2xl mb-6">
+          Step out and <span class="text-red-400 font-semibold">Explore!</span>
+        </h1>
+        <!-- Preview boxes-->
+        <div class="flex justify-center items-center gap-10 flex-wrap">
+          <div
+            class="w-[250px] sm:h-[300px] bg-blue-200 p-2 pb-3 rounded-md text-center"
+          >
+            <img class="h-[60%] w-[100%]" src="images/Pool.jpg" alt="" />
+            <p class="py-4 font-semibold">Chill at Venetian Swimming Pool!</p>
+            <a
+              class="p-1 px-3 hover:border-[2px] hover:border-black bg-red-900 rounded-md text-white"
+              href="#header"
+              >Let's go!</a
+            >
+          </div>
+          <div
+            class="w-[250px] sm:h-[300px] pb-3 bg-yellow-200 p-2 rounded-md text-center"
+          >
+            <img class="h-[60%] w-[100%]" src="images/momos.jpg" alt="" />
+            <p class="py-4 font-semibold">
+              Momo Cravings? Treat yourself at IM momos
+            </p>
+            <a
+              class="p-1 px-3 hover:border-[2px] hover:border-black bg-yellow-900 rounded-md text-white"
+              href="#"
+              >Show me</a
+            >
+          </div>
+          <div
+            class="hidden sm:block w-[250px] sm:h-[300px] pb-3 bg-green-200 p-2 rounded-md text-center"
+          >
+            <img class="h-[60%] w-[100%]" src="images/ringRoad.jpg" alt="" />
+            <p class="py-4 font-semibold">A long-ride on ring road</p>
+            <a
+              class="p-1 px-3 hover:border-[2px] hover:border-black bg-green-900 rounded-md text-white"
+              href="#"
+              >Route ?</a
+            >
+          </div>
+          <div
+            class="w-[250px] sm:h-[300px] pb-3 bg-red-200 p-2 rounded-md text-center"
+          >
+            <img class="h-[60%] w-[100%]" src="images/chausala.jpg" alt="" />
+            <p class="py-4 font-semibold">
+              Spend time with friends at Postal Ground
+            </p>
+            <a
+              class="p-1 px-3 hover:border-[2px] hover:border-black bg-blue-900 rounded-md text-white"
+              href="#"
+              >locate</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="p-3 px-12 mt-5 rounded-md text-black bg-white text-center font-semibold"
+        >
+          And many more to explore.
+          <br class="sm:hidden" />
+          Go through different sections in
+          <a href="#" class="text-blue-700">navigation</a>.
+        </div>
+      </div>
+    </div>
+
+    <!-- Navratri of Yavatmal -->
+
+    <div class="p-4 flex justify-center items-center">
+      <div
+        class="w-[90%] sm:w-[80%] sm:h-[400px] grid items-center sm:grid-cols-12"
+      >
+        <div
+          class="sm:col-span-4 h-full rounded-lg sm:h-[80%] sm:rounded-tr-none sm:rounded-br-none bg-red-900 flex flex-col sm:p-12 sm:justify-between justify-center items-center sm:items-start p-4 gap-2"
+        >
+          <h1 class="sm:text-3xl text-xl font-semibold text-white">
+            Glimpse of Navaratri 2023
+          </h1>
+          <a
+            class="hidden sm:block text-black font-semibold rounded-md p-1 w-[100px] bg-red-200 cursor-pointer text-center"
+            >See more ></a
+          >
+        </div>
+        <div
+          class="relative sm:col-span-8 h-[200px] sm:h-full bg-gray-500 rounded-lg border-2 border-white"
+        >
+          <img
+            id="navratriImage"
+            class="sm:h-[400px] h-[198px] w-full rounded-lg brightness-[80%]"
+            src="Navratri_images/12.jpg"
+          />
+          <p
+            class="text-2xl text-white absolute bottom-4 right-5 italic text-center hidden sm:inline"
+          >
+            exploreyavatmal.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto flex flex-col items-center">
+        <!-- Footer Links -->
+        <ul class="flex space-x-4">
+          <li><a href="#" class="hover:text-gray-400">Home</a></li>
+          <li><a href="#" class="hover:text-gray-400">Places</a></li>
+          <li><a href="#" class="hover:text-gray-400">Food</a></li>
+          <li><a href="#" class="hover:text-gray-400">About me</a></li>
+        </ul>
+        <!-- Copyright Text -->
+        <p class="mt-4">© 2024 Explore Yavatmal. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="javascript/logic.js"></script>
+  </body>
+</html>
