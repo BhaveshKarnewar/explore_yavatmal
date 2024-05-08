@@ -37,7 +37,7 @@ function changeImage() {
   currentIndex = (currentIndex + 1) % imageSet.length;
 }
 
-setInterval(changeImage, 3000);
+setInterval(changeImage, 2000);
 
 // image and text changing in Navratri 2024
 
