@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-gray-900">
+  <body class="bg-gray-900" onload="displayDate()">
     <!-- header  -->
 
     <header
@@ -98,7 +98,114 @@
     <!-- ================================== -->
 
     <!-- Main Content -->
-    <h1 class="text-2xl text-white">Mandir</h1>
+    <main class="relative">
+      <!-- heading and tags -->
+      <h1 class="text-orange-500 text-2xl font-semibold text-center p-4">
+        || जय श्री राम ||
+      </h1>
+      <div class="px-4 sm:px-12 py-2 text-center">
+        <p
+          class="bg-gray-800 p-2 inline-block border-2 border-gray-500 rounded-md text-pink-300 text-justify"
+        >
+          <i class="fa-solid fa-circle-info pr-2"></i>Visiting a Mandir daily
+          helps cleanse the mind and soul, allowing individuals to start each
+          day with a fresh perspective and positive energy.
+        </p>
+      </div>
+
+      <p class="absolute right-0 top-0 p-4 hidden sm:block text-white">
+        <span id="date"></span> <br />
+        <i class="fa-solid fa-location-dot"></i>
+        Yavatmal: <span id="temperature"></span>&deg;C
+      </p>
+
+      <!-- Mandir -->
+      <h1
+        class="text-white px-4 sm:px-12 text-2xl sm:text-3xl text-center py-4"
+      >
+        Sacred Mandirs in Yavatmal
+      </h1>
+      <div class="text-black p-4 sm:px-12 grid sm:grid-cols-2 gap-4 sm:gap-10">
+        <div
+          class="p-2 bg-yellow-200 rounded-md col-span-1 flex relative border-[2px] border-black hover:scale-110 transition-all duration-300 hover:bg-pink-300"
+        >
+          <img
+            src="../images/yelabaraOGdark.jpg"
+            class="rounded-md h-[100px] w-[120px] sm:h-[200px] sm:w-[250px] shadow-md shadow-black"
+            alt=""
+          />
+          <div class="pl-4 flex flex-col justify-between">
+            <div>
+              <h2 class="text-xl font-semibold">Mahadev Mandir</h2>
+              <p class="text-lg">L location</p>
+              <p class="text-[14px] text-justify pr-6 hidden sm:inline-block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                quia autem asperiores ea sit omnis quos minima commodi
+                recusandae sequi..
+              </p>
+            </div>
+
+            <div class="absolute bottom-0 right-0 p-4">
+              <a href="" class="px-4 py-[4px] bg-red-700 text-white rounded-md"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-2 bg-yellow-200 rounded-md col-span-1 flex relative border-[2px] border-black hover:scale-110 transition-all duration-300 hover:bg-pink-300"
+        >
+          <img
+            src="../images/yelabaraOGdark.jpg"
+            class="rounded-md h-[100px] w-[120px] sm:h-[200px] sm:w-[250px] shadow-md shadow-black"
+            alt=""
+          />
+          <div class="pl-4 flex flex-col justify-between">
+            <div>
+              <h2 class="text-xl font-semibold">Mahadev Mandir</h2>
+              <p class="text-lg">L location</p>
+              <p class="text-[14px] text-justify pr-6 hidden sm:inline-block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                quia autem asperiores ea sit omnis quos minima commodi
+                recusandae sequi..
+              </p>
+            </div>
+
+            <div class="absolute bottom-0 right-0 p-4">
+              <a href="" class="px-4 py-[4px] bg-red-700 text-white rounded-md"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-2 bg-yellow-200 rounded-md col-span-1 flex relative border-[2px] border-black hover:scale-110 transition-all duration-300 hover:bg-pink-300"
+        >
+          <img
+            src="../images/yelabaraOGdark.jpg"
+            class="rounded-md h-[100px] w-[120px] sm:h-[200px] sm:w-[250px] shadow-md shadow-black"
+            alt=""
+          />
+          <div class="pl-4 flex flex-col justify-between">
+            <div>
+              <h2 class="text-xl font-semibold">Mahadev Mandir</h2>
+              <p class="text-lg">L location</p>
+              <p class="text-[14px] text-justify pr-6 hidden sm:inline-block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                quia autem asperiores ea sit omnis quos minima commodi
+                recusandae sequi..
+              </p>
+            </div>
+
+            <div class="absolute bottom-0 right-0 p-4">
+              <a href="" class="px-4 py-[4px] bg-red-700 text-white rounded-md"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- footer -->
 
     <footer class="bg-violet-800 text-white py-8">
@@ -130,6 +237,25 @@
         floatedMenu.style.display = "none";
         console.log("Cross clicked");
       });
+
+      function displayDate() {
+        let currentDate = new Date();
+        let dateString = currentDate.toDateString();
+        console.log(dateString);
+
+        document.querySelector("#date").innerHTML = dateString;
+      }
+
+      async function ApiCalling() {
+        let response = await fetch(
+          "https://api.openweathermap.org/data/2.5/weather?lat=20.40&lon=78.13&appid=c0644d1569cf88da82a27db721fe81b8"
+        );
+        let data = await response.json();
+        let temp = Math.round(data.main.temp - 273);
+        document.querySelector("#temperature").innerHTML = temp;
+      }
+
+      ApiCalling();
     </script>
   </body>
 </html>

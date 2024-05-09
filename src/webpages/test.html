@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read More Button</title>
+    <style>
+      .content {
+        max-height: 100px; /* Set maximum height for the content */
+        overflow: hidden; /* Hide the overflow content */
+        transition: max-height 0.5s ease; /* Smooth transition effect */
+      }
+
+      .expanded {
+        max-height: none; /* Remove the maximum height to show all content */
+      }
+
+      .read-more-button {
+        display: inline-block;
+        cursor: pointer;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content" id="content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae
+        justo id risus sagittis fermentum. Duis porta arcu sed nulla faucibus,
+        at tincidunt nulla tempus. Donec id lacus vitae nisi fermentum posuere
+        vel nec eros. Nulla ultricies elit velit, vel tempus tortor ullamcorper
+        nec. Nulla ultrices odio non nisl lacinia, et vehicula velit cursus.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia curae; Nunc malesuada eros eu velit consequat, sed elementum
+        nulla aliquam. Sed consequat, est non tincidunt fringilla, metus risus
+        aliquam est, eu eleifend libero lorem ac metus. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Minima, optio labore totam laboriosam
+        obcaecati aperiam molestias quos iste animi? Facilis eveniet cumque
+        perspiciatis doloribus deserunt doloremque ullam blanditiis eligendi.
+        Repudiandae.lorem Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Tempora rerum doloremque maiores commodi quam esse amet fuga,
+        excepturi deserunt vitae quas suscipit veniam facilis, ducimus et atque!
+        Vel, temporibus dolore!
+      </p>
+    </div>
+
+    <button class="read-more-button" onclick="toggleReadMore()">
+      Read More
+    </button>
+
+    <script>
+      function toggleReadMore() {
+        var content = document.getElementById("content");
+        content.classList.toggle("expanded");
+
+        var button = document.querySelector(".read-more-button");
+        if (content.classList.contains("expanded")) {
+          button.textContent = "Read Less";
+        } else {
+          button.textContent = "Read More";
+        }
+      }
+    </script>
+  </body>
+</html>
