@@ -30,7 +30,7 @@
         <div>
           <a
             class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
-            href="index.html"
+            href="#"
           >
             Home</a
           >
@@ -46,7 +46,7 @@
         <div>
           <a
             class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
-            href="webpages/StreetFood.html"
+            href="webpages/Food.html"
           >
             Food</a
           >
@@ -96,7 +96,7 @@
       <hr />
       <a class="block p-3 active:bg-gray-500">Places</a>
       <hr />
-      <a class="block p-3 active:bg-gray-500">Street-food</a>
+      <a class="block p-3 active:bg-gray-500">Food</a>
       <hr />
       <a class="block p-3 active:bg-gray-500">Adventure</a>
       <hr />
@@ -106,7 +106,14 @@
     <!-- Main Content -->
     <main>
       <!-- grid -->
-      <div class="p-4 sm:p-8 grid sm:grid-cols-12 bg-gray-900 gap-8">
+      <div class="p-4 sm:p-8 grid sm:grid-cols-12 bg-gray-900 gap-8 relative">
+        <!-- date and temperature -->
+
+        <p class="absolute right-0 top-0 p-6 hidden sm:block text-white">
+          <span id="date"></span> <br />
+          <i class="fa-solid fa-location-dot text-sm"></i>
+          Yavatmal: <span id="temperature"></span>&deg;C
+        </p>
         <!-- left part -->
         <div
           class="sm:col-span-7 bg-gray-500 rounded-md overflow-hidden relative"
@@ -134,7 +141,7 @@
           class="sm:col-span-5 h-[400px] grid sm:p-4 grid-rows-3 gap-4 sm:gap-8 sm:grid"
         >
           <div
-            class="h-[100%] bg-red-200 sm:w-[60%] sm:ml-[10%] rounded-md cursor-pointer"
+            class="h-[100%] bg-red-200 sm:w-[60%] sm:ml-[5%] rounded-md cursor-pointer"
           >
             <a href="#nextContent" class="flex items-center h-full"
               ><i
@@ -158,7 +165,7 @@
             >
           </div>
           <div
-            class="h-[100%] bg-yellow-200 sm:w-[60%] sm:ml-[10%] rounded-md cursor-pointer"
+            class="h-[100%] bg-yellow-200 sm:w-[60%] sm:ml-[5%] rounded-md cursor-pointer"
           >
             <a href="webpages/Adventures.html" class="flex items-center h-full"
               ><i class="fa-solid fa-ghost fa-bounce text-2xl pl-[25px]"></i>
@@ -184,7 +191,7 @@
         </h1>
         <div class="text-white font-semibold pt-2 pb-4">____________</div>
 
-        <p class="sm:hidden">
+        <p class="sm:hidden px-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
           mollitia eius ipsa corrupti eaque atque omnis repudiandae officiis
           tempora nulla, doloremque accusamus veniam accusantium, debitis
@@ -231,9 +238,13 @@
         <!-- Preview boxes-->
         <div class="flex justify-center items-center gap-10 flex-wrap">
           <div
-            class="w-[250px] sm:h-[300px] bg-blue-200 p-2 pb-3 rounded-md text-center"
+            class="w-[85%] sm:w-[250px] sm:h-[300px] bg-blue-200 p-2 pb-3 rounded-md text-center"
           >
-            <img class="h-[60%] w-[100%]" src="images/Pool.jpg" alt="" />
+            <img
+              class="h-[60%] w-[100%] rounded-md"
+              src="images/Pool.jpg"
+              alt=""
+            />
             <p class="py-4 font-semibold">Chill at Venetian Swimming Pool!</p>
             <a
               class="p-1 px-3 hover:border-[2px] hover:border-black bg-red-900 rounded-md text-white"
@@ -242,9 +253,13 @@
             >
           </div>
           <div
-            class="w-[250px] sm:h-[300px] pb-3 bg-yellow-200 p-2 rounded-md text-center"
+            class="w-[85%] sm:w-[250px] sm:h-[300px] pb-3 bg-yellow-200 p-2 rounded-md text-center"
           >
-            <img class="h-[60%] w-[100%]" src="images/momos.jpg" alt="" />
+            <img
+              class="h-[60%] w-[100%] rounded-md"
+              src="images/momos.jpg"
+              alt=""
+            />
             <p class="py-4 font-semibold">
               Momo Cravings? Treat yourself at IM momos
             </p>
@@ -255,9 +270,13 @@
             >
           </div>
           <div
-            class="hidden sm:block w-[250px] sm:h-[300px] pb-3 bg-green-200 p-2 rounded-md text-center"
+            class="hidden sm:block w-[85%] sm:w-[250px] sm:h-[300px] pb-3 bg-green-200 p-2 rounded-md text-center"
           >
-            <img class="h-[60%] w-[100%]" src="images/ringRoad.jpg" alt="" />
+            <img
+              class="h-[60%] w-[100%] rounded-md"
+              src="images/ringRoad.jpg"
+              alt=""
+            />
             <p class="py-4 font-semibold">A long-ride on ring road</p>
             <a
               class="p-1 px-3 hover:border-[2px] hover:border-black bg-green-900 rounded-md text-white"
@@ -266,9 +285,13 @@
             >
           </div>
           <div
-            class="w-[250px] sm:h-[300px] pb-3 bg-red-200 p-2 rounded-md text-center"
+            class="w-[85%] sm:w-[250px] sm:h-[300px] pb-3 bg-red-200 p-2 rounded-md text-center"
           >
-            <img class="h-[60%] w-[100%]" src="images/chausala.jpg" alt="" />
+            <img
+              class="h-[60%] w-[100%] rounded-md"
+              src="images/chausala.jpg"
+              alt=""
+            />
             <p class="py-4 font-semibold">
               Spend time with friends at Postal Ground
             </p>
@@ -304,6 +327,8 @@
             Glimpse of Navaratri 2023
           </h1>
           <a
+            href="https://www.google.com/search?sca_esv=cd9a55a255ee4ca7&rlz=1C1ONGR_enIN974IN974&q=yavatmal+navratri+2023&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiHn-bP4YKGAxWkr1YBHYIEAtIQ0pQJegQICxAB"
+            target="_blank"
             class="hidden sm:block text-black font-semibold rounded-md p-1 w-[100px] bg-red-200 cursor-pointer text-center"
             >See more ></a
           >
@@ -342,5 +367,27 @@
     </footer>
 
     <script src="javascript/logic.js"></script>
+    <script>
+      function displayDate() {
+        let currentDate = new Date();
+        let dateString = currentDate.toDateString();
+        console.log(dateString);
+
+        document.querySelector("#date").innerHTML = dateString;
+      }
+
+      displayDate();
+
+      async function ApiCalling() {
+        let response = await fetch(
+          "https://api.openweathermap.org/data/2.5/weather?lat=20.40&lon=78.13&appid=c0644d1569cf88da82a27db721fe81b8"
+        );
+        let data = await response.json();
+        let temp = Math.round(data.main.temp - 273);
+        document.querySelector("#temperature").innerHTML = temp;
+      }
+
+      ApiCalling();
+    </script>
   </body>
 </html>

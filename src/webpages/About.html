@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-gray-900">
+  <body class="bg-black">
     <!-- header  -->
 
     <header
@@ -21,12 +21,12 @@
       class="w-full flex justify-between p-6 sm:px-10 bg-gray-300"
     >
       <div class="text-black-500 text-3xl font-semibold">
-        <a href="#header">
+        <a href="../index.html">
           Explore<span class="text-purple-700 font-bold">Yavatmal</span></a
         >
       </div>
 
-      <nav class="hidden justify-between text-lg gap-8 sm:flex">
+      <nav class="hidden justify-between text-xl font-semibold gap-6 sm:flex">
         <div>
           <a
             class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
@@ -38,7 +38,7 @@
         <div>
           <a
             class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
-            href="#"
+            href="Places.html"
           >
             Places</a
           >
@@ -46,7 +46,7 @@
         <div>
           <a
             class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
-            href="#"
+            href="Food.html"
           >
             Food</a
           >
@@ -54,17 +54,25 @@
         <div>
           <a
             class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
-            href="#"
+            href="Mandir.html"
           >
-            Colleges</a
+            Mandirs</a
           >
         </div>
         <div>
           <a
             class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
-            href="#"
+            href="Events.html"
           >
             Events</a
+          >
+        </div>
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="About.html"
+          >
+            About</a
           >
         </div>
       </nav>
@@ -98,7 +106,76 @@
     <!-- ================================== -->
 
     <!-- Main Content -->
-    <h1 class="text-2xl text-white">About</h1>
+    <main
+      class="p-4 pt-8 sm:p-12 flex flex-col justify-center items-center gap-4 sm:gap-12 sm:flex-row"
+    >
+      <!-- image  -->
+      <div>
+        <img
+          class="h-[150px] w-[150px] sm:h-[250px] sm:w-[250px] rounded-full border-2 border-gray-500"
+          src="../images/Baigan.jpg"
+          alt=""
+        />
+      </div>
+      <!-- text  -->
+      <div class="text-white text-center sm:text-left">
+        <h1 class="text-3xl font-semibold text-blue-300 pb-2">
+          Bhavesh Karnewar
+        </h1>
+        <p class="text-lg">
+          Computer Engineer | Web Developer <br />
+          <i class="fa-solid fa-graduation-cap text-sm"></i>
+          GCOEY' 24
+        </p>
+        <p>
+          A friendly neighborhood engineer with a love for exploring
+          <br class="hidden sm:block" />
+          places and creating immersive experiences online.
+        </p>
+      </div>
+    </main>
+
+    <!-- Social media handles -->
+    <section
+      class="flex flex-col px-[30%] sm:px-2 sm:flex-row justify-center pb-6 gap-3 sm:gap-8"
+    >
+      <a
+        class="p-1 sm:p-2 sm:px-4 inline-block text-lg text-center border-2 border-gray-500 rounded-full text-white hover:scale-110 hover:text-yellow-300 hover:font-semibold transition-all duration-300"
+        href=""
+        ><i class="fa-solid fa-envelope"></i> Email</a
+      >
+
+      <a
+        class="p-1 sm:p-2 sm:px-4 inline-block text-lg text-center border-2 border-gray-500 rounded-full text-white hover:scale-110 hover:text-pink-500 hover:font-semibold transition-all duration-300"
+        href=""
+        ><i class="fa-brands fa-instagram"></i> Instagram</a
+      >
+
+      <a
+        class="p-1 sm:p-2 sm:px-4 sm:inline-block text-lg text-center border-2 border-gray-500 rounded-full text-white hover:scale-110 hover:text-blue-400 hover:font-semibold transition-all duration-300"
+        href=""
+        ><i class="fa-brands fa-linkedin"></i> Linked in</a
+      >
+
+      <a
+        class="p-1 sm:p-2 sm:px-4 sm:inline-block text-lg text-center border-2 border-gray-500 rounded-full text-white hover:scale-110 hover:text-purple-400 hover:font-semibold transition-all duration-300"
+        href=""
+        ><i class="fa-brands fa-discord"></i> Discord</a
+      >
+    </section>
+
+    <!-- quote -->
+    <p class="text-gray-500 text-lg text-center py-4 sm:hidden block">
+      Thank you for visiting
+      <span class="font-bold text-white"
+        >Explore<span class="text-violet-400">Yavatmal</span></span
+      >!
+    </p>
+
+    <p class="text-gray-500 italic text-lg text-center py-12 hidden sm:block">
+      "The greatest glory in living lies not in never falling, but in rising
+      every time we fall. &#129415;"
+    </p>
     <!-- footer -->
 
     <footer class="bg-violet-800 text-white py-8">

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <link href="../output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-900">
+    <!-- header  -->
+
+    <header
+      id="header"
+      class="w-full flex justify-between p-6 sm:px-10 bg-gray-300"
+    >
+      <div class="text-black-500 text-3xl font-semibold">
+        <a href="../index.html">
+          Explore<span class="text-purple-700 font-bold">Yavatmal</span></a
+        >
+      </div>
+
+      <nav class="hidden justify-between text-xl font-semibold gap-6 sm:flex">
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="../index.html"
+          >
+            Home</a
+          >
+        </div>
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="Places.html"
+          >
+            Places</a
+          >
+        </div>
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="#"
+          >
+            Food</a
+          >
+        </div>
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="Mandir.html"
+          >
+            Mandirs</a
+          >
+        </div>
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="Events.html"
+          >
+            Events</a
+          >
+        </div>
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="About.html"
+          >
+            About</a
+          >
+        </div>
+      </nav>
+
+      <div class="sm:hidden">
+        <i class="fa-solid fa-bars" id="menuBtn"></i>
+      </div>
+    </header>
+
+    <!-- floated menu -->
+
+    <div
+      class="w-[45%] bg-black text-white text-xl absolute top-0 right-0 rounded-md hidden z-50"
+      id="floatedMenu"
+    >
+      <div class="right-0 p-3 text-right">
+        <i id="crossBtn" class="fa-solid fa-xmark text-xl"></i>
+      </div>
+
+      <a class="block p-3 active:bg-gray-500">Home</a>
+      <hr />
+      <a class="block p-3 active:bg-gray-500">Places</a>
+      <hr />
+      <a class="block p-3 active:bg-gray-500">Food</a>
+      <hr />
+      <a class="block p-3 active:bg-gray-500">Adventure</a>
+      <hr />
+      <a class="block p-3 active:bg-gray-500">About me</a>
+    </div>
+
+    <!-- ================================== -->
+
+    <!-- Main Content -->
+    <main>
+      <h1 class="text-2xl text-white">Food in Yavatmal</h1>
+      <p class="text-white">
+        I have tried almost every streetfood, dhabas and restaurants in yavatmal
+        during my engineering. And here are some of them which i liked and used
+        to visit frequently
+      </p>
+
+      <div class="px-2 sm:px-10 flex gap-2 sm:gap-4 flex-wrap text-white">
+        <a
+          href="#"
+          class="p-2 border-[2px] border-gray-600 rounded-full hover:bg-gray-300 hover:font-semibold hover:text-black cursor-pointer"
+          >StreetFood</a
+        >
+        <a
+          href="#"
+          class="p-2 border-[2px] border-gray-600 rounded-full hover:bg-gray-300 hover:font-semibold hover:text-black cursor-pointer"
+          >Dhabas</a
+        >
+        <a
+          href="#"
+          class="p-2 border-[2px] border-gray-600 rounded-full hover:bg-gray-300 hover:font-semibold hover:text-black cursor-pointer"
+          >Restaurants</a
+        >
+      </div>
+      <!-- street food -->
+
+      <div id="streetfood" class="p-6 sm:px-10">
+        <h1 class="pb-4 text-2xl sm:text-3xl text-white">Street food</h1>
+
+        <div class="sm:flex text-black sm:gap-12 sm:flex-wrap grid gap-4">
+          <div class="p-2 rounded-md border-2 border-gray-500 bg-pink-200">
+            <img
+              class="h-[170px] sm:w-[250px] w-full rounded-md shadow-md shadow-black"
+              src="../Places/Elements.jpg"
+              alt=""
+            />
+            <p class="text-xl pt-3 font-semibold text-center">
+              Esquare Elements
+            </p>
+            <p class="text-sm text-center">
+              &#127909;Movie &#127871;Snacks &#127918;Games
+            </p>
+
+            <div class="text-center pt-4 pb-2 text-white">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Prayas+Van,+Yavatmal,+Maharashtra,+India"
+                class="text-[16px] px-2 py-[2px] bg-blue-800 border-[2px] rounded-md border-blue-900"
+                >Visit</a
+              >
+            </div>
+          </div>
+          <div class="p-2 rounded-md border-2 border-gray-500 bg-pink-200">
+            <img
+              class="h-[170px] sm:w-[250px] w-full rounded-md shadow-md shadow-black"
+              src="../Places/mh29.jpg"
+              alt=""
+            />
+            <p class="text-xl pt-3 font-semibold text-center">Majista's MH29</p>
+            <p class="text-sm text-center">&#127909;Movie &#127871;Snacks</p>
+
+            <div class="text-center pt-4 pb-2 text-white">
+              <a
+                href="#"
+                class="text-[16px] px-2 py-[2px] bg-blue-800 border-[2px] rounded-md border-blue-900"
+                >Visit</a
+              >
+            </div>
+          </div>
+          <div class="p-2 rounded-md border-2 border-gray-500 bg-pink-200">
+            <img
+              class="h-[170px] sm:w-[250px] w-full rounded-md shadow-md shadow-black"
+              src="../Places/saroj.jpg"
+              alt=""
+            />
+            <p class="text-xl pt-3 font-semibold text-center">Saroj Talkies</p>
+            <p class="text-sm text-center">&#127909;Movie</p>
+
+            <div class="text-center pt-4 pb-2 text-white">
+              <a
+                href="#"
+                class="text-[16px] px-2 py-[2px] bg-blue-800 border-[2px] rounded-md border-blue-900"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dhabas -->
+
+      <div id="dhabas" class="p-6 sm:px-10">
+        <h1 class="pb-4 text-2xl sm:text-3xl text-white">Dhabas</h1>
+
+        <div class="sm:flex text-black sm:gap-12 sm:flex-wrap grid gap-4">
+          <div class="p-2 rounded-md border-2 border-gray-500 bg-green-200">
+            <img
+              class="h-[170px] sm:w-[250px] w-full rounded-md shadow-md shadow-black"
+              src="../Places/Elements.jpg"
+              alt=""
+            />
+            <p class="text-xl pt-3 font-semibold text-center">
+              Esquare Elements
+            </p>
+            <p class="text-sm text-center">
+              &#127909;Movie &#127871;Snacks &#127918;Games
+            </p>
+
+            <div class="text-center pt-4 pb-2 text-white">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Prayas+Van,+Yavatmal,+Maharashtra,+India"
+                class="text-[16px] px-2 py-[2px] bg-blue-800 border-[2px] rounded-md border-blue-900"
+                >Visit</a
+              >
+            </div>
+          </div>
+          <div class="p-2 rounded-md border-2 border-gray-500 bg-green-200">
+            <img
+              class="h-[170px] sm:w-[250px] w-full rounded-md shadow-md shadow-black"
+              src="../Places/mh29.jpg"
+              alt=""
+            />
+            <p class="text-xl pt-3 font-semibold text-center">Majista's MH29</p>
+            <p class="text-sm text-center">&#127909;Movie &#127871;Snacks</p>
+
+            <div class="text-center pt-4 pb-2 text-white">
+              <a
+                href="#"
+                class="text-[16px] px-2 py-[2px] bg-blue-800 border-[2px] rounded-md border-blue-900"
+                >Visit</a
+              >
+            </div>
+          </div>
+          <div class="p-2 rounded-md border-2 border-gray-500 bg-green-200">
+            <img
+              class="h-[170px] sm:w-[250px] w-full rounded-md shadow-md shadow-black"
+              src="../Places/saroj.jpg"
+              alt=""
+            />
+            <p class="text-xl pt-3 font-semibold text-center">Saroj Talkies</p>
+            <p class="text-sm text-center">&#127909;Movie</p>
+
+            <div class="text-center pt-4 pb-2 text-white">
+              <a
+                href="#"
+                class="text-[16px] px-2 py-[2px] bg-blue-800 border-[2px] rounded-md border-blue-900"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurants -->
+
+      <div id="dhabas" class="p-6 sm:px-10">
+        <h1 class="pb-4 text-2xl sm:text-3xl text-white">Restaurants</h1>
+
+        <div class="sm:flex text-black sm:gap-12 sm:flex-wrap grid gap-4">
+          <div class="p-2 rounded-md border-2 border-gray-500 bg-yellow-200">
+            <img
+              class="h-[170px] sm:w-[250px] w-full rounded-md shadow-md shadow-black"
+              src="../Places/Elements.jpg"
+              alt=""
+            />
+            <p class="text-xl pt-3 font-semibold text-center">
+              Esquare Elements
+            </p>
+            <p class="text-sm text-center">
+              &#127909;Movie &#127871;Snacks &#127918;Games
+            </p>
+
+            <div class="text-center pt-4 pb-2 text-white">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Prayas+Van,+Yavatmal,+Maharashtra,+India"
+                class="text-[16px] px-2 py-[2px] bg-blue-800 border-[2px] rounded-md border-blue-900"
+                >Visit</a
+              >
+            </div>
+          </div>
+          <div class="p-2 rounded-md border-2 border-gray-500 bg-pink-200">
+            <img
+              class="h-[170px] sm:w-[250px] w-full rounded-md shadow-md shadow-black"
+              src="../Places/mh29.jpg"
+              alt=""
+            />
+            <p class="text-xl pt-3 font-semibold text-center">Majista's MH29</p>
+            <p class="text-sm text-center">&#127909;Movie &#127871;Snacks</p>
+
+            <div class="text-center pt-4 pb-2 text-white">
+              <a
+                href="#"
+                class="text-[16px] px-2 py-[2px] bg-blue-800 border-[2px] rounded-md border-blue-900"
+                >Visit</a
+              >
+            </div>
+          </div>
+          <div class="p-2 rounded-md border-2 border-gray-500 bg-pink-200">
+            <img
+              class="h-[170px] sm:w-[250px] w-full rounded-md shadow-md shadow-black"
+              src="../Places/saroj.jpg"
+              alt=""
+            />
+            <p class="text-xl pt-3 font-semibold text-center">Saroj Talkies</p>
+            <p class="text-sm text-center">&#127909;Movie</p>
+
+            <div class="text-center pt-4 pb-2 text-white">
+              <a
+                href="#"
+                class="text-[16px] px-2 py-[2px] bg-blue-800 border-[2px] rounded-md border-blue-900"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="bg-violet-800 text-white py-8">
+      <div class="container mx-auto flex flex-col items-center">
+        <!-- Footer Links -->
+        <ul class="flex space-x-4">
+          <li><a href="#" class="hover:text-gray-400">Home</a></li>
+          <li><a href="#" class="hover:text-gray-400">Places</a></li>
+          <li><a href="#" class="hover:text-gray-400">Food</a></li>
+          <li><a href="#" class="hover:text-gray-400">About me</a></li>
+        </ul>
+        <!-- Copyright Text -->
+        <p class="mt-4">© 2024 Explore Yavatmal. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // floating menu sidebar
+
+      let menuBtn = document.querySelector("#menuBtn");
+      let crossBtn = document.querySelector("#crossBtn");
+
+      let floatedMenu = document.querySelector("#floatedMenu");
+      menuBtn.addEventListener("click", function () {
+        floatedMenu.style.display = "block";
+      });
+
+      crossBtn.addEventListener("click", function () {
+        floatedMenu.style.display = "none";
+        console.log("Cross clicked");
+      });
+    </script>
+  </body>
+</html>

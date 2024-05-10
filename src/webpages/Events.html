@@ -21,12 +21,12 @@
       class="w-full flex justify-between p-6 sm:px-10 bg-gray-300"
     >
       <div class="text-black-500 text-3xl font-semibold">
-        <a href="#header">
+        <a href="../index.html">
           Explore<span class="text-purple-700 font-bold">Yavatmal</span></a
         >
       </div>
 
-      <nav class="hidden justify-between text-lg gap-8 sm:flex">
+      <nav class="hidden justify-between text-xl font-semibold gap-6 sm:flex">
         <div>
           <a
             class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
@@ -38,7 +38,7 @@
         <div>
           <a
             class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
-            href="#"
+            href="Places.html"
           >
             Places</a
           >
@@ -46,7 +46,7 @@
         <div>
           <a
             class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
-            href="#"
+            href="Food.html"
           >
             Food</a
           >
@@ -54,9 +54,9 @@
         <div>
           <a
             class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
-            href="#"
+            href="Mandir.html"
           >
-            Colleges</a
+            Mandirs</a
           >
         </div>
         <div>
@@ -65,6 +65,14 @@
             href="#"
           >
             Events</a
+          >
+        </div>
+        <div>
+          <a
+            class="p-2 hover:border-1 hover:border-black rounded-lg hover:bg-gray-400"
+            href="About.html"
+          >
+            About</a
           >
         </div>
       </nav>
@@ -98,8 +106,16 @@
     <!-- ================================== -->
 
     <!-- Main Content -->
-    <main class="p-4 sm:p-10">
-      <div class="grid sm:grid-cols-12 text-white">
+    <main class="p-4 sm:p-10 relative">
+      <!-- date and temperature -->
+      <p class="absolute right-0 top-0 p-6 hidden sm:block text-white">
+        <span id="date"></span> <br />
+        <i class="fa-solid fa-location-dot text-sm"></i>
+        Yavatmal: <span id="temperature"></span>&deg;C
+      </p>
+
+      <!-- grid -->
+      <div class="grid sm:grid-cols-12 text-white sm:gap-12">
         <!-- Left grid -->
         <div class="sm:col-span-8">
           <h1 class="text-2xl sm:text-3xl pb-4 font-semibold">
@@ -120,9 +136,11 @@
 
           <!-- events list -->
 
-          <div class="py-4 pt-8 flex justify-start items-center gap-12">
+          <div
+            class="py-4 sm:pl-10 pt-8 flex justify-start sm:items-center gap-6 sm:gap-12"
+          >
             <img
-              src=""
+              src="../Events/Fair.jpg"
               class="h-[100px] w-[100px] sm:h-[150px] sm:w-[150px] rounded-full border-2 border-white"
             />
 
@@ -131,16 +149,25 @@
               <hr />
               <p class="text-sm text-justify pt-[4px]">
                 Often held annually or periodically in a some areas of yavatmal.
-                It can vary widely in size and scope, from small community
-                events to large-scale exhibitions or trade shows.
+                Expected locations: Azad Maidan, Nagpur bypass square, Arni road
+                & Ringroad intersection, etc
               </p>
-              <p class="text-sm">##tags with emojis</p>
+              <p class="text-sm">
+                <span class="inline-block"> &#127914;Entertainment</span>
+                <span class="inline-block"> &#127904;Fun games</span>
+                <span class="inline-block"> &#127905;Giant-wheel</span>
+                <span class="inline-block"> &#127835;Food</span>
+                <span class="inline-block"> &#129473;Desserts</span>
+                <span class="inline-block"> &#127991;Shops</span>
+              </p>
             </div>
           </div>
 
-          <div class="py-4 flex justify-start items-center gap-12">
+          <div
+            class="py-4 sm:pl-10 flex justify-start sm:items-center gap-6 sm:gap-12"
+          >
             <img
-              src=""
+              src="../Events/Venetian.jpg"
               class="h-[100px] w-[100px] sm:h-[150px] sm:w-[150px] rounded-full border-2 border-white"
             />
 
@@ -148,22 +175,33 @@
               <h1 class="text-2xl pb-4 font-semibold">Venetian</h1>
               <hr />
               <p class="text-sm text-justify pt-[4px]">
-                Best banquet hall in yavatmal. All rich peeps do their events
-                here, so you can imagine what food, ambience and experience
-                you'll get here.
+                Best banquet hall & lawn in yavatmal. All rich peeps do their
+                events here, so you can imagine what food, ambience and
+                experience you'll get here.
               </p>
-              <p class="text-sm">##tags with emojis</p>
+              <p class="text-sm pt-1">
+                <span class="inline-block"> &#129395;Uninvited weddings</span>
+                <span class="inline-block"> &#10024;Luxurious</span>
+                <span class="inline-block"> &#127881;Celebrations</span>
+                <span class="inline-block"> &#127870;Parties</span>
+
+                <span class="inline-block"> &#127835;Food</span>
+              </p>
 
               <div class="pt-2 flex justify-end">
                 <a class="py-[4px] px-2 bg-blue-700 rounded-md" href="#">
-                  <i class="fa-solid fa-location-dot pr-2"></i>Location</a
+                  <i class="fa-solid fa-location-dot pr-2 text-sm"></i
+                  >Location</a
                 >
               </div>
             </div>
           </div>
-          <div class="py-4 flex justify-start items-center gap-12">
+
+          <div
+            class="py-4 sm:pl-10 flex justify-start sm:items-center gap-6 sm:gap-12"
+          >
             <img
-              src=""
+              src="../Events/MW.jpg"
               class="h-[100px] w-[100px] sm:h-[150px] sm:w-[150px] rounded-full border-2 border-white"
             />
 
@@ -175,62 +213,124 @@
                 hall is generally more crowded making it easier to eat and
                 disappear.
               </p>
-              <p class="text-sm">##tags with emojis</p>
+              <p class="text-sm pt-1">
+                &#129395;Uninvited weddings &#10024;Luxurious
+                &#127881;Celebrations &#127870;Parties &#127835;Food
+              </p>
 
               <div class="pt-2 flex justify-end">
                 <a class="py-[4px] px-2 bg-blue-700 rounded-md" href="#">
-                  <i class="fa-solid fa-location-dot pr-2"></i>Location</a
+                  <i class="fa-solid fa-location-dot pr-2 text-sm"></i
+                  >Location</a
                 >
               </div>
             </div>
           </div>
-          <div class="py-4 flex justify-start items-center gap-12">
+          <div
+            class="py-4 sm:pl-10 flex justify-start sm:items-center gap-6 sm:gap-12"
+          >
             <img
-              src=""
+              src="../Events/ShivShakti.jpeg"
               class="h-[100px] w-[100px] sm:h-[150px] sm:w-[150px] rounded-full border-2 border-white"
             />
 
             <div class="w-[60%]">
-              <h1 class="text-2xl pb-4 font-semibold">Balaji Lawns</h1>
+              <h1 class="text-2xl pb-4 font-semibold">
+                ShivShakti Lawns, SBI square
+              </h1>
               <hr />
               <p class="text-sm text-justify pt-[4px]">
-                Near SBI square, Balaji Lawn is the savior of GCOEY students as
-                its just a walking distance away. Funfact: You'll find atleast
-                one fellow from your college whenever you visit here.
+                Near SBI square, this lawn is a savior of GCOEY students as it's
+                just a walking distance away. Funfact: You'll find atleast one
+                fellow from your college whenever you visit here.
               </p>
-              <p class="text-sm">##tags with emojis</p>
+              <p class="text-sm pt-1">
+                <span class="inline-block"> &#129395;Uninvited weddings</span>
+                <span class="inline-block"> &#127881;Celebrations</span>
+                <span class="inline-block"> &#127870;Parties</span>
+
+                <span class="inline-block"> &#127835;Food</span>
+              </p>
 
               <div class="pt-2 flex justify-end">
                 <a class="py-[4px] px-2 bg-blue-700 rounded-md" href="#">
-                  <i class="fa-solid fa-location-dot pr-2"></i>Location</a
+                  <i class="fa-solid fa-location-dot pr-2 text-sm"></i
+                  >Location</a
                 >
               </div>
             </div>
           </div>
-          <div class="py-4 flex justify-start items-center gap-12">
+          <div
+            class="py-4 sm:pl-10 flex justify-start sm:items-center gap-6 sm:gap-12"
+          >
             <img
-              src=""
+              src="../Events/Balkrisna.jpg"
               class="h-[100px] w-[100px] sm:h-[150px] sm:w-[150px] rounded-full border-2 border-white"
             />
 
             <div class="w-[60%]">
-              <h1 class="text-2xl pb-4 font-semibold">Random event no: 1</h1>
+              <h1 class="text-2xl pb-4 font-semibold">
+                Shri Balkrishna Mangalam
+              </h1>
               <hr />
               <p class="text-sm text-justify pt-[4px]">
-                description about the event
+                Beatiful banquet hall & lawn on Arni road. Good weddings often
+                happen here.
               </p>
-              <p class="text-sm">##tags with emojis</p>
+              <p class="text-sm pt-1">
+                <span class="inline-block"> &#129395;Uninvited weddings</span>
+                <span class="inline-block"> &#127881;Celebrations</span>
+                <span class="inline-block"> &#127870;Parties</span>
+
+                <span class="inline-block"> &#127835;Food</span>
+              </p>
 
               <div class="pt-2 flex justify-end">
                 <a class="py-[4px] px-2 bg-blue-700 rounded-md" href="#">
-                  <i class="fa-solid fa-location-dot pr-2"></i>Location</a
+                  <i class="fa-solid fa-location-dot pr-2 text-sm"></i
+                  >Location</a
                 >
               </div>
             </div>
           </div>
         </div>
         <!-- Right grid -->
-        <div class="sm:col-span-4"></div>
+
+        <div class="sm:col-span-4 sm:pl-4 sm:pt-[70px]">
+          <div class="border-[2px] border-gray-700 rounded-md p-4 bg-black">
+            <h1 class="text-xl text-blue-300">
+              Want to promote your Event/Business?
+            </h1>
+            <ul class="text-sm list-disc pl-4 gap-2 grid pt-2 text-[#bbbbbb]">
+              <li>
+                Promoting your business or store on
+                <span class="font-bold"
+                  >Explore<span class="text-violet-400">Yavatmal</span></span
+                >
+                offers many advantages that can significantly impact your
+                visibility and growth .
+              </li>
+              <li>
+                Establishing a strong online presence through this platform
+                makes it easier for potential customers to find and trust your
+                business.
+              </li>
+              <li>
+                Displaying your business here expands your reach, increases
+                brand awareness, and drives sales, ultimately contributing to
+                the overall growth and success of your business.
+              </li>
+            </ul>
+
+            <div class="flex pt-4 justify-center">
+              <a
+                href="#"
+                class="px-2 py-[4px] bg-blue-300 text-black font-semibold rounded-md hover:scale-110 transition-all duration-300"
+                >Contact <i class="fa-solid fa-arrow-right text-sm"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <!-- footer -->
@@ -264,6 +364,27 @@
         floatedMenu.style.display = "none";
         console.log("Cross clicked");
       });
+
+      function displayDate() {
+        let currentDate = new Date();
+        let dateString = currentDate.toDateString();
+        console.log(dateString);
+
+        document.querySelector("#date").innerHTML = dateString;
+      }
+
+      displayDate();
+
+      async function ApiCalling() {
+        let response = await fetch(
+          "https://api.openweathermap.org/data/2.5/weather?lat=20.40&lon=78.13&appid=c0644d1569cf88da82a27db721fe81b8"
+        );
+        let data = await response.json();
+        let temp = Math.round(data.main.temp - 273);
+        document.querySelector("#temperature").innerHTML = temp;
+      }
+
+      ApiCalling();
     </script>
   </body>
 </html>
