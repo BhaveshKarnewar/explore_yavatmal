@@ -106,34 +106,47 @@
     <!-- ================================== -->
 
     <!-- Main Content -->
-    <main>
-      <h1 class="text-2xl text-white">Food in Yavatmal</h1>
-      <p class="text-white">
-        I have tried almost every streetfood, dhabas and restaurants in yavatmal
-        during my engineering. And here are some of them which i liked and used
-        to visit frequently
-      </p>
+    <main class="relative">
+      <h1 class="text-2xl text-white px-10 pt-4">Food in Yavatmal</h1>
+      <div class="px-10 py-4">
+        <p
+          class="text-white border-1 border-gray-500 bg-gray-700 inline-block rounded-md p-2"
+        >
+          <i class="fa-solid fa-circle-info"></i> I have tried almost every
+          streetfood, dhabas and restaurants in yavatmal during my engineering.
+          <br />
+          And here are some of them which I liked most and used to visit
+          frequently.
+        </p>
+      </div>
 
       <div class="px-2 sm:px-10 flex gap-2 sm:gap-4 flex-wrap text-white">
         <a
-          href="#"
+          href="#streetFood"
           class="p-2 border-[2px] border-gray-600 rounded-full hover:bg-gray-300 hover:font-semibold hover:text-black cursor-pointer"
           >StreetFood</a
         >
         <a
-          href="#"
+          href="#dhabas"
           class="p-2 border-[2px] border-gray-600 rounded-full hover:bg-gray-300 hover:font-semibold hover:text-black cursor-pointer"
           >Dhabas</a
         >
         <a
-          href="#"
+          href="#restaurants"
           class="p-2 border-[2px] border-gray-600 rounded-full hover:bg-gray-300 hover:font-semibold hover:text-black cursor-pointer"
           >Restaurants</a
         >
       </div>
+
+      <!-- date & temperature -->
+      <p class="absolute right-0 top-0 p-4 hidden sm:block text-white">
+        <span id="date"></span> <br />
+        <i class="fa-solid fa-location-dot text-sm"></i>
+        Yavatmal: <span id="temperature"></span>&deg;C
+      </p>
       <!-- street food -->
 
-      <div id="streetfood" class="p-6 sm:px-10">
+      <div id="streetFood" class="p-6 sm:px-10">
         <h1 class="pb-4 text-2xl sm:text-3xl text-white">Street food</h1>
 
         <div class="sm:flex text-black sm:gap-12 sm:flex-wrap grid gap-4">
@@ -261,7 +274,7 @@
 
       <!-- Restaurants -->
 
-      <div id="dhabas" class="p-6 sm:px-10">
+      <div id="restaurants" class="p-6 sm:px-10">
         <h1 class="pb-4 text-2xl sm:text-3xl text-white">Restaurants</h1>
 
         <div class="sm:flex text-black sm:gap-12 sm:flex-wrap grid gap-4">
@@ -326,18 +339,77 @@
 
     <!-- footer -->
 
-    <footer class="bg-violet-800 text-white py-8">
-      <div class="container mx-auto flex flex-col items-center">
-        <!-- Footer Links -->
-        <ul class="flex space-x-4">
-          <li><a href="#" class="hover:text-gray-400">Home</a></li>
-          <li><a href="#" class="hover:text-gray-400">Places</a></li>
-          <li><a href="#" class="hover:text-gray-400">Food</a></li>
-          <li><a href="#" class="hover:text-gray-400">About me</a></li>
+    <footer class="text-white bg-black pt-4 px-4 mt-8">
+      <section
+        class="flex flex-col gap-4 sm:gap-0 sm:flex-row sm:justify-around"
+      >
+        <div>
+          <span class="font-bold text-white text-2xl"
+            >Explore<span class="text-violet-400">Yavatmal</span></span
+          >
+        </div>
+        <ul class="hidden sm:inline-block">
+          <li class="font-semibold text-gray-400">DISCOVER</li>
+          <br />
+          <li class="font-semibold text-gray-400">
+            <a href="Food.html">Food</a>
+          </li>
+          <li class="font-semibold text-gray-400">
+            <a href="Places.html">Places</a>
+          </li>
+          <li class="font-semibold text-gray-400">
+            <a href="Adventures.html">Adventures</a>
+          </li>
         </ul>
-        <!-- Copyright Text -->
-        <p class="mt-4">© 2024 Explore Yavatmal. All rights reserved.</p>
-      </div>
+
+        <ul>
+          <li class="font-semibold text-gray-400 hidden sm:inline-block">
+            PROMOTE
+          </li>
+
+          <br class="hidden sm:inline-block" />
+          <br />
+          <li class="font-semibold text-gray-400">
+            Promote your business/entity <br />
+            on
+            <span class="font-semibold text-white"
+              >Explore<span class="text-violet-400">Yavatmal</span></span
+            >
+          </li>
+          <li class="py-1">
+            <a
+              href="Promote.html"
+              class="px-2 py-[4px] bg-blue-300 text-black font-semibold rounded-md text-sm"
+              >Contact <i class="fa-solid fa-arrow-right text-xs"></i
+            ></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="font-semibold text-gray-400 hidden sm:inline-block">
+            SHARE
+          </li>
+
+          <br class="hidden sm:inline-block" />
+          <br />
+
+          <li class="font-semibold text-gray-400">
+            Share your thoughts, suggestions, <br />
+            stories or experiences about yavatmal with me.
+          </li>
+          <li class="py-1">
+            <a
+              href="https://www.instagram.com/bhavesh__kar98/"
+              target="_blank"
+              class="px-2 py-[4px] bg-blue-300 text-black font-semibold rounded-md text-sm"
+              >Connect with me <i class="fa-solid fa-arrow-right text-xs"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <p class="text-center py-2 pt-12 bg-black text-gray-300 font-semibold">
+        © 2024 ExploreYavatmal. All rights reserved.
+      </p>
     </footer>
 
     <script>
@@ -355,6 +427,27 @@
         floatedMenu.style.display = "none";
         console.log("Cross clicked");
       });
+
+      function displayDate() {
+        let currentDate = new Date();
+        let dateString = currentDate.toDateString();
+        console.log(dateString);
+
+        document.querySelector("#date").innerHTML = dateString;
+      }
+
+      displayDate();
+
+      async function ApiCalling() {
+        let response = await fetch(
+          "https://api.openweathermap.org/data/2.5/weather?lat=20.40&lon=78.13&appid=c0644d1569cf88da82a27db721fe81b8"
+        );
+        let data = await response.json();
+        let temp = Math.round(data.main.temp - 273);
+        document.querySelector("#temperature").innerHTML = temp;
+      }
+
+      ApiCalling();
     </script>
   </body>
 </html>
