@@ -18,12 +18,17 @@
 
     <header
       id="header"
-      class="w-full flex justify-between p-6 sm:px-10 bg-gray-300"
+      class="w-full flex justify-between items-center px-6 py-2 sm:py-6 sm:px-10 bg-gray-300"
     >
       <div class="text-black-500 text-3xl font-semibold">
         <a href="#header">
           Explore<span class="text-purple-700 font-bold">Yavatmal</span></a
         >
+        <p class="sm:hidden inline-block text-black text-xs">
+          <span id="date"></span> <br />
+          <i class="fa-solid fa-location-dot text-xs"></i>
+          Yavatmal: <span id="temperature"></span>&deg;C
+        </p>
       </div>
 
       <nav class="hidden justify-between text-xl font-semibold gap-6 sm:flex">
@@ -78,29 +83,41 @@
       </nav>
 
       <div class="sm:hidden">
-        <i class="fa-solid fa-bars" id="menuBtn"></i>
+        <i class="fa-solid fa-bars text-xl" id="menuBtn"></i>
       </div>
     </header>
 
     <!-- floated menu -->
 
     <div
-      class="w-[45%] bg-black text-white text-xl absolute top-0 right-0 rounded-md hidden z-50"
+      class="w-[45%] mt-2 mr-2 p-2 bg-black text-white text-xl absolute top-0 right-0 rounded-md hidden z-50"
       id="floatedMenu"
     >
       <div class="right-0 p-3 text-right">
-        <i id="crossBtn" class="fa-solid fa-xmark text-xl"></i>
+        <i id="crossBtn" class="fa-solid fa-xmark text-[2rem]"></i>
       </div>
 
-      <a class="block p-3 active:bg-gray-500">Home</a>
-      <hr />
-      <a class="block p-3 active:bg-gray-500">Places</a>
-      <hr />
-      <a class="block p-3 active:bg-gray-500">Food</a>
-      <hr />
-      <a class="block p-3 active:bg-gray-500">Adventure</a>
-      <hr />
-      <a class="block p-3 active:bg-gray-500">About me</a>
+      <a href="webpages/Places.html" class="block p-2 active:bg-gray-500"
+        >Places</a
+      >
+      <hr class="border-gray-500" />
+      <a href="webpages/Food.html" class="block p-2 active:bg-gray-500">Food</a>
+      <hr class="border-gray-500" />
+      <a href="webpages/Adventures.html" class="block p-2 active:bg-gray-500"
+        >Adventure</a
+      >
+      <hr class="border-gray-500" />
+      <a href="webpages/Mandir.html" class="block p-2 active:bg-gray-500"
+        >Mandirs</a
+      >
+      <hr class="border-gray-500" />
+      <a href="webpages/Events.html" class="block p-2 active:bg-gray-500"
+        >Events</a
+      >
+      <hr class="border-gray-500" />
+      <a href="webpages/About.html" class="block p-2 active:bg-gray-500"
+        >About me</a
+      >
     </div>
 
     <!-- Main Content -->
