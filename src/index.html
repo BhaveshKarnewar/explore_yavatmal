@@ -24,10 +24,12 @@
         <a href="#header">
           Explore<span class="text-purple-700 font-bold">Yavatmal</span></a
         >
+
+        <!-- header date & temperature -->
         <p class="sm:hidden inline-block text-black text-xs">
-          <span id="date"></span> <br />
+          <span id="headerDate"></span> <br />
           <i class="fa-solid fa-location-dot text-xs"></i>
-          Yavatmal: <span id="temperature"></span>&deg;C
+          Yavatmal: <span id="headerTemperature"></span>&deg;C
         </p>
       </div>
 
@@ -444,6 +446,7 @@
         console.log(dateString);
 
         document.querySelector("#date").innerHTML = dateString;
+        document.querySelector("#headerDate").innerHTML = dateString;
       }
 
       displayDate();
@@ -455,6 +458,7 @@
         let data = await response.json();
         let temp = Math.round(data.main.temp - 273);
         document.querySelector("#temperature").innerHTML = temp;
+        document.querySelector("#headerTemperature").innerHTML = temp;
       }
 
       ApiCalling();
