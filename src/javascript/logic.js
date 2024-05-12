@@ -15,26 +15,26 @@ crossBtn.addEventListener("click", function () {
 
 // image and text changing in right grid
 
-let image = document.querySelector("#myImage");
+// let image = document.querySelector("#myImage");
 let text = document.querySelector("#imageText");
 
-let imageSet = [
-  "images/chausala.jpg",
-  "images/yelabaraOGdark.jpg",
-  "images/nightMarket.jpg",
-];
+// let imageSet = [
+//   "images/chausala.jpg",
+//   "images/yelabaraOGdark.jpg",
+//   "images/nightMarket.jpg",
+// ];
 
 let textSet = [
-  "Explore the city through my perspective",
-  "Adventure awaits just beyond your doorstep!",
+  "Explore the city through my perspective...",
+  "Discover yavatamal with me! ",
   "Visit Pre-reviewed places & actual experiences",
 ];
 let currentIndex = 0;
 
 function changeImage() {
-  image.src = imageSet[currentIndex];
+  // image.src = imageSet[currentIndex];
   text.innerHTML = textSet[currentIndex];
-  currentIndex = (currentIndex + 1) % imageSet.length;
+  currentIndex = (currentIndex + 1) % textSet.length;
 }
 
 setInterval(changeImage, 2000);
