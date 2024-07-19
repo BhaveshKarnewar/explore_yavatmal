@@ -28,7 +28,7 @@ You can view the Project at  <a href="https://exploreyavatmal.live/">ExploreYava
 
 **Acknowledgements**
 Thanks to the open-source libraries and tools that made this project possible.
----
+
 ---
 
 **<i>Developed by Bhavesh</i>**
