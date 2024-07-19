@@ -12,7 +12,7 @@ City Explorer is a web-based application designed to help users discover and lea
 
 - **Location Search:** Easily search for places to explore with google maps integration.
 - **Attraction Details:** View detailed information about attractions, including descriptions, images, and locations.
-- **Categories:** Browse through different categories of places like restaurants, parks, museums, and more.
+- **Categories:** Browse through different categories of places like restaurants, parks, mandirs and more.
 - **Interactive Maps:** Visualize locations on interactive maps for better navigation.
 - **Personal Experiences:** Created  by analysing events and locations with local residents.
 - **Diverse Perspective:** This feature can be realised only by visiting the web app.
@@ -28,6 +28,7 @@ You can view the Project at  <a href="https://exploreyavatmal.live/">ExploreYava
 
 **Acknowledgements**
 Thanks to the open-source libraries and tools that made this project possible.
+---
 
 **<i>Developed by Bhavesh</i>**
 <br/>
